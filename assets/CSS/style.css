@@ -1,29 +1,42 @@
+/* BODY */
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 .big_video{
     position: fixed;
-    left: 0;
     top: 0;
-    z-index: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(70%);
 }
+
+/* HEADER */
 
 .header{
     border: 1px solid red;
-    position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .social_box{
     border: 1px solid red;
+    margin-left: auto;
 }
 
-.social{
-    position: relative;
+#social img{
+    width: 40px;
 }
 
 .title_box{
-    position: relative;
     border: 1px solid red;
     width: 100%;
 }
@@ -31,12 +44,65 @@
 #title{
     margin: 0px;
     text-align: center;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-size: 50px;
 }
 
-.big_box{
+/*COUNTER*/
+
+.counter_box{
     position: relative;
     border: 1px solid red;
-    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 150px;
+    background: rgba(255,255,255,0.13);
+	backdrop-filter: blur(4px);
+    box-shadow: 0 0 36px rgba(8,7,16,0.6);
+    width: 20%;
+    height: 300px;
+}
+
+/* DISPLAY */
+
+.display_box{
+    width: 200px;
+    height: 200px;
+    color: aliceblue;
+    text-align: center;
+}
+
+#display{
+    margin-top: 50px;
+    justify-content: center;
+    font-size: 100px;
+}
+
+#display p{
+    margin: 0;
+}
+
+/* BOTTONI */
+
+.button_box{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 200px;
+    margin-top: 30px;
+}
+
+.button_box button{
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10%;
+    background-color: rgb(21, 145, 62);
+    box-shadow: 2px 5px 0px 0px rgba(20, 19, 20, 0.6);
+}
+
+.start_box{
+    border: 1px solid red;
+    position: relative;
+    top: 300px;
 }
