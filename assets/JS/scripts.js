@@ -18,23 +18,36 @@ const negativeButton = document.getElementById("negative_button");
 const resetButton = document.getElementById("reset_button");
 const startButton = document.getElementById("start_button");
 
+
 let bottone1 = creaBottone("-", decrementaContatore);
 negativeButton.appendChild(bottone1);
 
-let bottone2 = creaBottone("Reset", resettaContatore)
+let bottone2 = creaBottone("Reset", resettaContatore);
 resetButton.appendChild(bottone2);
 
 let bottone3 = creaBottone("+", incrementaContatore);
 positiveButton.appendChild(bottone3);
 
+let bottone4 = creaBottone("start");
+startButton.appendChild(bottone4);
 
 //COUNTER
 let contatore = 0;
 let display = document.getElementById("display")
+let suono = new Audio('/assets/Audio/sheep2.mp3')
 
 function incrementaContatore(){
     contatore++;
     updateDisplay();
+    if(contatore == 10) {
+        alert("complimenti!");
+    }
+
+    if(contatore == 20){
+        alert("incredibile");
+    }
+
+    suono.play();
 }
 
 function decrementaContatore(){
@@ -53,6 +66,15 @@ function updateDisplay(){
     display.innerHTML = contatore;
 }
 
-//START IMG
+//GENERA COLORE
+function generaColore() {
+    let coloreR = Math.floor(Math.random() *256);
+    let coloreG = Math.floor(Math.random() *256);
+    let coloreB = Math.floor(Math.random() *256);
+
+    return "rgb"( + coloreR + coloreG + coloreB);
+}
+
+
 
 
