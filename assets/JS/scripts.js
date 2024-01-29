@@ -10,7 +10,9 @@ function creaBottone(testo, gestoreEvento) {
 }
 
 //H1
-document.getElementById("title").innerHTML="Questo è un contatore di pecore"
+document.getElementById("title").innerHTML="Sheep counter"
+//H2
+document.getElementById("subtitle").innerHTML="By Davide Poletto"
 
 //BOTTONI
 const positiveButton = document.getElementById("positive_button");
@@ -25,17 +27,32 @@ negativeButton.appendChild(bottone1);
 let bottone2 = creaBottone("Reset", resettaContatore);
 resetButton.appendChild(bottone2);
 
-let bottone3 = creaBottone("+", incrementaContatore);
+let bottone3 = creaBottone("+", incrementaContatore, riproduciSUonoCasuale);
 positiveButton.appendChild(bottone3);
 
 
 //AUDIO
-let suono = new Audio('/assets/Audio/sheep2.mp3')
+const suono = [
+    '/assets/Audio/sheep1.mp3',
+    '/assets/Audio/sheep2.mp3',
+    '/assets/Audio/sheep3.mp3',
+];
+
+const audioPecore = new Audio();
+
+function riproduciSUonoCasuale() {
+    const indiceCasuale = Math.floor(Math.random() * suono.length);
+    audioPecore.src = suono[indiceCasuale];
+    audioPecore.play();
+};
+
 let audioSfondo = new Audio ('/assets/Audio/bells.mp3')
 audioSfondo.addEventListener("ended", function() {
     audioSfondo.currentTime = 0;
     audioSfondo.play();
-})
+});
+
+const audioReset = new Audio('/assets/Audio/reset.mp3')
 
 //COUNTER
 let contatore = 0;
@@ -45,26 +62,27 @@ function incrementaContatore(){
     contatore++;
     updateDisplay();
     if(contatore == 10) {
-        alert("complimenti!");
+        confirm("complimenti!");
     }
 
     if(contatore == 20){
         alert("incredibile");
     }
 
-    suono.play();
-}
+    riproduciSUonoCasuale();
+};
 
 function decrementaContatore(){
     if (contatore > 0){
     contatore--;
     updateDisplay();
     }
-}
+};
 
 function resettaContatore(){
     contatore = 0;
     updateDisplay();
+    audioReset.play();
 }
 
 function updateDisplay(){
@@ -76,10 +94,11 @@ let bottone4 = creaBottone("Avvia");
 startButton.appendChild(bottone4);
 bottone4.addEventListener("click", function(){
     if(audioSfondo.paused) {
-        document.getElementById("big_video").src = 'assets/IMG/Sheeps.gif';
+        document.getElementById("big_video").src = '/assets/IMG/Sheeps.gif';
         audioSfondo.play();
         bottone4.textContent = "Interrompi";
     } else {
+        document.getElementById("big_video").src = '/assets/IMG/Sheeps.png';
         audioSfondo.pause();
         audioSfondo.currentTime = 0;
         bottone4.textContent = "Avvia"
