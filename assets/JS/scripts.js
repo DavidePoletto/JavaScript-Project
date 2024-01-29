@@ -28,13 +28,18 @@ resetButton.appendChild(bottone2);
 let bottone3 = creaBottone("+", incrementaContatore);
 positiveButton.appendChild(bottone3);
 
-let bottone4 = creaBottone("start");
-startButton.appendChild(bottone4);
+
+//AUDIO
+let suono = new Audio('/assets/Audio/sheep2.mp3')
+let audioSfondo = new Audio ('/assets/Audio/bells.mp3')
+audioSfondo.addEventListener("ended", function() {
+    audioSfondo.currentTime = 0;
+    audioSfondo.play();
+})
 
 //COUNTER
 let contatore = 0;
 let display = document.getElementById("display")
-let suono = new Audio('/assets/Audio/sheep2.mp3')
 
 function incrementaContatore(){
     contatore++;
@@ -66,15 +71,17 @@ function updateDisplay(){
     display.innerHTML = contatore;
 }
 
-//GENERA COLORE
-function generaColore() {
-    let coloreR = Math.floor(Math.random() *256);
-    let coloreG = Math.floor(Math.random() *256);
-    let coloreB = Math.floor(Math.random() *256);
-
-    return "rgb"( + coloreR + coloreG + coloreB);
-}
-
-
-
-
+//BOTTONE START
+let bottone4 = creaBottone("Avvia");
+startButton.appendChild(bottone4);
+bottone4.addEventListener("click", function(){
+    if(audioSfondo.paused) {
+        document.getElementById("big_video").src = 'assets/IMG/Sheeps.gif';
+        audioSfondo.play();
+        bottone4.textContent = "Interrompi";
+    } else {
+        audioSfondo.pause();
+        audioSfondo.currentTime = 0;
+        bottone4.textContent = "Avvia"
+    }
+});

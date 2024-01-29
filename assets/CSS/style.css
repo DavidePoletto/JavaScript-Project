@@ -7,7 +7,7 @@ body{
     
 }
 
-.big_video{
+#big_video{
     position: fixed;
     top: 0;
     left: 0;
