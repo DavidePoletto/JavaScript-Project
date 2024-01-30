@@ -11,8 +11,7 @@ function creaBottone(testo, gestoreEvento) {
 
 //H1
 document.getElementById("title").innerHTML="Sheep counter"
-//H2
-document.getElementById("subtitle").innerHTML="By Davide Poletto"
+
 
 //BOTTONI
 const positiveButton = document.getElementById("positive_button");
@@ -58,17 +57,31 @@ const audioReset = new Audio('/assets/Audio/reset.mp3')
 let contatore = 0;
 let display = document.getElementById("display")
 
+function mostraAlert(percorsoImmagine) {
+    const modale = document.createElement("div");
+    modale.className = "alert-modal";
+    
+    if (percorsoImmagine) {
+        const immagineModale = document.createElement("img");
+        immagineModale.src = percorsoImmagine;
+        immagineModale.alt = "Immagine del modale";
+        modale.appendChild(immagineModale);
+    }
+    
+    const chiudiButton = creaBottone("Chiudi", function() {
+        document.body.removeChild(modale);
+    });
+    modale.appendChild(chiudiButton);
+
+    document.body.appendChild(modale);
+}
+
 function incrementaContatore(){
     contatore++;
     updateDisplay();
-    if(contatore == 10) {
-        confirm("complimenti!");
+    if(contatore === 10) {
+        mostraAlert("/assets/IMG/shaunsheep.png");
     }
-
-    if(contatore == 20){
-        alert("incredibile");
-    }
-
     riproduciSUonoCasuale();
 };
 

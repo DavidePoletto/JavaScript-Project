@@ -27,7 +27,6 @@ body{
 }
 
 .social_box{
-    border: 1px solid red;
     margin-left: auto;
 }
 
@@ -36,7 +35,6 @@ body{
 }
 
 .title_box{
-    border: 1px solid red;
     width: 100%;
 }
 
@@ -46,16 +44,7 @@ body{
     font-size: 48px;
     color: #d5fcf8;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-#subtitle{
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    font-size: 20px;
-    color: #d5fcf8;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
 }
 
 /*COUNTER*/
@@ -152,4 +141,33 @@ body{
     box-shadow:none;
 }
 
-/*MEDIA*/
+/*ALERT*/
+.alert-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #649d6f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    filter: opacity(90%);
+}
+
+.alert-modal img{
+    width: 50%;
+
+}
+.alert-modal button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10%;
+    background-color: #ff4e33;
+    text-transform: uppercase;
+    font-family:'ahal';
+    font-weight:400;
+    color:#FFFFFF;
+}
