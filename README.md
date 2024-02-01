@@ -45,8 +45,6 @@ Step into the magical world of sheep counting on SheepCount.com and get ready to
 
 ## Built With
 
-section. Here are a few examples.
-
 * [JavaScript]()
 * [HTML]()
 * [CSS]()
