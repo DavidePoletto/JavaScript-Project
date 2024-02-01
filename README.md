@@ -67,7 +67,7 @@ Distributed under the MIT License. See [LICENSE](https://github.com/davidepolett
 
 ## Authors
 
-* **Davide Poletto** - *start2Impact student* - [Davide Poletto](https://github.com/DavidePoletto) - **
+* **Davide Poletto** - *start2Impact student* - [Davide Poletto](https://github.com/DavidePoletto) -
 
 
 
