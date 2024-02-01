@@ -1,5 +1,4 @@
-<br/>
-<div style="text-align: center;">
+<div style="text-align: center; max-width: 600px; margin: 0 auto;">
   <a href="https://github.com/davidepoletto/JavaScript-Project">
     <img src="/assets/IMG/shaunsheep.png" alt="Logo" width="200">
   </a>
