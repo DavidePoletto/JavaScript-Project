@@ -1,13 +1,13 @@
 <br/>
-<p style= "text-align : center;"></p>
+<div style="text-align: center;">
   <a href="https://github.com/davidepoletto/JavaScript-Project">
-    <img src="/assets/IMG/shaunsheep.png" alt="Logo" width="80" height="80">
+    <img src="/assets/IMG/shaunsheep.png" alt="Logo" width="200">
   </a>
 
-  <h3 style= "text-align : center">Sheep Counter</h3>
+  <h3>Sheep Counter</h3>
 
-  <p style = "text-align : center"></p>
-    "SheepCounter: Bringing a Woolly Wave of Serenity, One Click at a Time!"
+  <p>"SheepCounter: Bringing a Woolly Wave of Serenity, One Click at a Time!"</p>
+</div>
     <br/>
     <br/>
     <a href="https://github.com/davidepoletto/JavaScript-Project"><strong>Explore the docs »</strong></a>
