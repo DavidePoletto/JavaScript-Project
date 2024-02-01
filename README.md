@@ -1,12 +1,13 @@
-<div style="text-align: center; max-width: 600px; margin: 0 auto;">
+<p align="center">
   <a href="https://github.com/davidepoletto/JavaScript-Project">
     <img src="/assets/IMG/shaunsheep.png" alt="Logo" width="200">
   </a>
+</p>
 
-  <h3>Sheep Counter</h3>
+<h3 align="center">Sheep Counter</h3>
 
-  <p>"SheepCounter: Bringing a Woolly Wave of Serenity, One Click at a Time!"</p>
-</div>
+<p align="center">"SheepCounter: Bringing a Woolly Wave of Serenity, One Click at a Time!"</p>
+
     <br/>
     <br/>
     <a href="https://github.com/davidepoletto/JavaScript-Project"><strong>Explore the docs »</strong></a>
