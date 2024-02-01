@@ -12,7 +12,6 @@
     <a href="https://github.com/davidepoletto/JavaScript-Project"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/davidepoletto/JavaScript-Project">View Demo</a>
     .
     <a href="https://github.com/davidepoletto/JavaScript-Project/issues">Report Bug</a>
     .
