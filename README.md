@@ -7,7 +7,6 @@
 <h3 align="center">Sheep Counter</h3>
 
 <p align="center">"SheepCounter: Bringing a Woolly Wave of Serenity, One Click at a Time!"</p>
-
     <br/>
     <br/>
     <a href="https://github.com/davidepoletto/JavaScript-Project"><strong>Explore the docs »</strong></a>
