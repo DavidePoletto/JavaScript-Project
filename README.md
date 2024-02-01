@@ -23,7 +23,7 @@
 
 ## About The Project
 
-![Screen Shot](/assets/IMG/screenshot.png)
+<a href="https://sheepcounterr.netlify.app/">![Screen Shot](/assets/IMG/screenshot.png)</a>
 
 Welcome to https://sheepcounterr.netlify.app/, the most avant-garde site for sheep counting enthusiasts! Here, counting sheep is not just a pastime, but a refined art that might change your life (or at least make you laugh a bit).
 
