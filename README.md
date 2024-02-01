@@ -1,12 +1,12 @@
 <br/>
-<p text-align ="center">
+<p style= "text-align : center;"></p>
   <a href="https://github.com/davidepoletto/JavaScript-Project">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="/assets/IMG/shaunsheep.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 text-align ="center">Sheep Counter</h3>
+  <h3 style= "text-align : center">Sheep Counter</h3>
 
-  <p text-align ="center">
+  <p style = "text-align : center"></p>
     "SheepCounter: Bringing a Woolly Wave of Serenity, One Click at a Time!"
     <br/>
     <br/>
